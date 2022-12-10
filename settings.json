@@ -1,0 +1,101 @@
+{
+    "python.defaultInterpreterPath": "C:\\Users\\ASUS-ARCOMP\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.lineHeight": 1.6,
+
+    // vim config
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+        "before": ["j", "k"],
+        "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+        "before": ["<leader>", "d"],
+        "after": ["d", "d"]
+        },
+        {
+        "before": ["<C-n>"],
+        "commands": [":nohl"],
+        },
+        // save file
+        {
+        "before": ["<space>"],
+        "commands": ["workbench.action.files.save"]
+        },
+        // file explorer
+        {
+            "before": ["<leader>", "t"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+          },
+          {
+            "before": ["<leader>", "f"],
+            "commands": [ "revealInExplorer" ],
+          },
+          {
+            "before": ["<leader>", "r", "f"],
+            "commands": [ "fileutils.renameFile" ]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "breadcrumbs.enabled": false,
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": false,
+    "editor.fontWeight": "500", 
+    "editor.find.addExtraSpaceOnTop": false,
+    "workbench.editor.untitled.hint": "hidden",
+    "bracketPairColorizer.depreciation-notice": false,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorBlinking": "solid",
+    "java.inlayHints.parameterNames.enabled": "none",
+
+    //remove italics
+    "editor.tokenColorCustomizations": {
+    "[Tokyo Night]": { // or "[Tokyo Night Storm]"
+        "textMateRules": [{
+            "scope": [
+                "comment",
+                "meta.var.expr storage.type",
+                "keyword.control.flow",
+                "keyword.control.return",
+                "meta.directive.vue punctuation.separator.key-value.html",
+                "meta.directive.vue entity.other.attribute-name.html",
+                "tag.decorator.js entity.name.tag.js",
+                "tag.decorator.js punctuation.definition.tag.js",
+                "storage.modifier"
+            ],
+            "settings": {
+                "fontStyle": ""
+            }
+          }]
+        }
+    },
+    "editor.bracketPairColorization.enabled": false,
+    "editor.codeLens": false,
+    "workbench.layoutControl.enabled": false,
+    "window.menuBarVisibility": "compact",
+    "editor.wordWrap": "on",
+    "workbench.colorTheme": "Tokyo Night Storm",
+    "sqltools.connections": [],
+    "window.zoomLevel": -1,
+    "window.commandCenter": false
+}
